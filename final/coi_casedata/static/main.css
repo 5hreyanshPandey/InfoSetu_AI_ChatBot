@@ -1,0 +1,216 @@
+/* static/main.css */
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* Chat Window Styles */
+.chat_window {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.top_menu {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.messages {
+    list-style-type: none;
+    padding: 15px;
+    overflow-y: auto;
+    flex-grow: 1;
+    border-top: 1px solid #ddd;
+}
+
+/* Individual Message Box Styles */
+.messages li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* User Message Style */
+.messages li.user {
+    background-color: #d1e7dd; /* Light green background */
+    align-self: flex-end;
+    max-width: 70%;
+    color: #005f43; /* Dark green text */
+    border: 1px solid #005f43; /* Dark green border */
+    word-wrap: break-word;
+}
+
+/* Bot Message Style */
+.messages li.bot {
+    background-color: #cfe2ff; /* Light blue background */
+    align-self: flex-start;
+    max-width: 70%;
+    color: #003d99; /* Dark blue text */
+    border: 1px solid #003d99; /* Dark blue border */
+    word-wrap: break-word;
+}
+
+/* Typing Indicator Styles */
+.typing_indicator {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    font-style: italic;
+    color: #6c757d;
+}
+
+/* Input Styles */
+.bottom_wrapper {
+    display: flex;
+    padding: 10px;
+    background-color: #f9f9f9;
+    align-items: center;
+}
+
+#msg_input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Microphone Button Styles */
+.mic_button {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mic_button:hover {
+    background-color: #5a6268;
+}
+
+.mic_button.recording {
+    background-color: #dc3545; /* Red color when recording */
+    animation: pulse 1s infinite;
+}
+
+/* Pulse animation for recording indicator */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.4);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(220, 53, 69, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+    }
+}
+
+/* Send Button Styles */
+.app_button_1 {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.app_button_1:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Help Section Styles */
+.panel-group {
+    margin: 10px 0;
+}
+
+.panel-default {
+    border-color: #ddd;
+}
+
+.panel-heading {
+    background-color: #e7f1ff;
+    border-bottom: 1px solid #ddd;
+}
+
+.panel-title a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.panel-title a:hover {
+    color: #007bff;
+}
+
+.panel-body {
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .chat_window {
+        height: auto;
+    }
+
+    .messages {
+        max-height: 200px;
+    }
+
+    .bottom_wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #msg_input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .mic_button {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .app_button_1 {
+        width: 100%;
+    }
+}

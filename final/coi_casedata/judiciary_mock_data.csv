@@ -1,0 +1,11 @@
+filing_number,registration_date,case_status,first_hearing_date,next_hearing_date,appearance,stage_of_case,petitioner,petitioner_advocate,respondent,respondent_advocate,judge_last_decision
+2022001,15-01-2022,Active,01-02-2022,15-03-2022,Yes,Trial,Jitesh Babu,Ravi Sharma,Amit Kumar,Suresh Gupta,Judge Singh: Case to proceed to trial
+2022002,20-02-2022,Closed,05-03-2022,10-04-2022,No,Judgment,Rita Patel,Nisha Verma,Sanjay Mehta,Rajesh Joshi,Judge Sharma: Case dismissed
+2022003,10-03-2022,Active,01-04-2022,20-05-2022,Yes,Hearing,Ashok Yadav,Pooja Mehta,Sita Devi,Vikram Singh,Judge Rao: Awaiting further evidence
+2022004,15-04-2022,Closed,10-05-2022,15-06-2022,Yes,Ruling,Mohan Lal,Karan Desai,Nirmal Singh,Aditi Gupta,Judge Verma: Ruling in favor of petitioner
+2022005,25-05-2022,Active,20-06-2022,25-07-2022,No,Hearing,Gita Roy,Sanjay Kumar,Rajiv Nair,Priya Malhotra,Judge Joshi: Next hearing scheduled
+2022006,30-06-2022,Closed,15-07-2022,20-08-2022,Yes,Ruling,Karan Singh,Maya Patel,Lakshmi Rao,Nitin Sharma,Judge Iyer: Case resolved
+2022007,10-07-2022,Active,05-08-2022,10-09-2022,No,Hearing,Vikram Singh,Aditi Bhatia,Rani Gupta,Suresh Kumar,Judge Kapoor: Adjourned for further arguments
+2022008,15-08-2022,Closed,01-09-2022,05-10-2022,Yes,Ruling,Pooja Agarwal,Nikhil Jain,Rajesh Khanna,Vikram Mehta,Judge Singh: Final judgment issued
+2022009,20-09-2022,Active,01-10-2022,15-11-2022,Yes,Hearing,Nitin Verma,Ravi Kumar,Kajal Sharma,Sanjay Gupta,Judge Rao: Evidence presentation ongoing
+2022010,25-10-2022,Closed,10-11-2022,05-01-2023,No,Ruling,Sarita Devi,Mohan Yadav,Amit Bansal,Pooja Sinha,Judge Iyer: Case concluded with settlement
